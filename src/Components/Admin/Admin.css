@@ -1,0 +1,112 @@
+.adminContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  max-width: 960px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.adminTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #2c3e50;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+flex-direction: column;
+}
+
+/* Action bar */
+.actionContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.5rem;
+}
+
+.createButton {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Modal styling */
+.createUserModal .ant-modal-content {
+  border-radius: 12px;
+  padding: 24px;
+}
+
+/* Form inside modal */
+.userForm .ant-form-item {
+  margin-bottom: 1.2rem;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 0.6rem 0;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* Table container */
+.tableContainer {
+  flex: 1;
+  margin-top: 2rem;
+  overflow-x: auto;
+}
+
+.sectionTitle {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #34495e;
+}
+
+.userTable {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.userTable .ant-table-thead > tr > th {
+  background-color: #f0f2f5;
+  font-weight: 600;
+}
+
+.userTable .ant-table-tbody > tr > td {
+  vertical-align: middle;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .adminContainer {
+    padding: 1rem;
+  }
+
+  .adminTitle {
+    font-size: 1.6rem;
+  }
+
+  .actionContainer {
+    justify-content: center;
+  }
+
+  .createButton,
+  .submitButton {
+    width: 100%;
+  }
+
+  .userTable {
+    padding: 0.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}

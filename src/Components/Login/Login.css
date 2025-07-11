@@ -1,0 +1,27 @@
+.loginParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+  width: 100vw;
+}
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 20vw;
+
+  .pdiv {
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  div {
+    width: 100%;
+  }
+}
